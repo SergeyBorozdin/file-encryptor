@@ -5,29 +5,39 @@ import net.lingala.zip4j.model.enums.CompressionLevel;
 import net.lingala.zip4j.model.enums.CompressionMethod;
 import net.lingala.zip4j.model.enums.EncryptionMethod;
 
+import javax.swing.*;
 import java.io.File;
 
 public class Main {
 
     public static void main(String[] args)
     {
-        String path = "C:\\Users\\60034452\\Desktop\\";
-        ZipParameters parameters = new ZipParameters(); // создаем параметры
-        parameters.setCompressionMethod(CompressionMethod.DEFLATE);// тип энкриптора или тип архивации
-        parameters.setCompressionLevel(CompressionLevel.PRE_ULTRA);// сила сжатия файлов
-        parameters.setEncryptFiles(true); // устанавливает шифрование
-        parameters.setEncryptionMethod(EncryptionMethod.AES);// метод шифрования, алгоритм шифрования
-        parameters.setAesKeyStrength(AesKeyStrength.KEY_STRENGTH_256);// сила шифрования
+        JFrame frame = new JFrame("File Encrytor");//задаем заголовок
+        frame.setSize(600,400);// задаем размер
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//метод остановки программы по закрытию окна
+        frame.setLocationRelativeTo(null); // расположение окна равняем по центру экрана
+        frame.setVisible(true);// делаем видимым
 
-        try {
-            ZipFile zipFile = new ZipFile(path + "archive.zip", "passwd123".toCharArray());
-            zipFile.addFolder(
-                    new File(path + "folder"), // передаем путь
-                    parameters // передаем параметры
-            );
-        }
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
+
+
+
+//        String path = "C:\\Users\\60034452\\Desktop\\";
+//        ZipParameters parameters = new ZipParameters(); // создаем параметры
+//        parameters.setCompressionMethod(CompressionMethod.DEFLATE);// тип энкриптора или тип архивации
+//        parameters.setCompressionLevel(CompressionLevel.PRE_ULTRA);// сила сжатия файлов
+//        parameters.setEncryptFiles(true); // устанавливает шифрование
+//        parameters.setEncryptionMethod(EncryptionMethod.AES);// метод шифрования, алгоритм шифрования
+//        parameters.setAesKeyStrength(AesKeyStrength.KEY_STRENGTH_256);// сила шифрования
+//
+//        try {
+//            ZipFile zipFile = new ZipFile(path + "archive.zip", "passwd123".toCharArray());
+//            zipFile.addFolder(
+//                    new File(path + "folder"), // передаем путь
+//                    parameters // передаем параметры
+//            );
+//        }
+//        catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
     }
 }
