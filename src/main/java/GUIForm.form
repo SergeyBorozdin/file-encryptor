@@ -21,15 +21,17 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="46726" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="46726" class="javax.swing.JTextField" binding="filePath">
             <constraints/>
             <properties>
-              <preferredSize width="200" height="30"/>
+              <editable value="false"/>
+              <preferredSize width="500" height="30"/>
             </properties>
           </component>
-          <component id="52a10" class="javax.swing.JButton" binding="выберитеФайлИлиПапкуButton" default-binding="true">
+          <component id="52a10" class="javax.swing.JButton" binding="button" default-binding="true">
             <constraints/>
             <properties>
+              <actionCommand value="Button"/>
               <text value="Выберите файл или папку"/>
             </properties>
           </component>
