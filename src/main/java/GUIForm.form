@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUIForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="5" vgap="5">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <hspacer id="cdfdc">
+        <constraints border-constraint="North"/>
+      </hspacer>
+      <vspacer id="3ef0c">
+        <constraints border-constraint="East"/>
+      </vspacer>
+      <vspacer id="4b974">
+        <constraints border-constraint="West"/>
+      </vspacer>
+      <grid id="e4a03" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="46726" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints/>
+            <properties>
+              <preferredSize width="200" height="30"/>
+            </properties>
+          </component>
+          <component id="52a10" class="javax.swing.JButton" binding="выберитеФайлИлиПапкуButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Выберите файл или папку"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

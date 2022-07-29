@@ -1,12 +1,4 @@
-import net.lingala.zip4j.ZipFile;// важно импорт класса ZipFile из библиотеки maven
-import net.lingala.zip4j.model.ZipParameters;
-import net.lingala.zip4j.model.enums.AesKeyStrength;
-import net.lingala.zip4j.model.enums.CompressionLevel;
-import net.lingala.zip4j.model.enums.CompressionMethod;
-import net.lingala.zip4j.model.enums.EncryptionMethod;
-
 import javax.swing.*;
-import java.io.File;
 
 public class Main {
 
@@ -16,6 +8,8 @@ public class Main {
         frame.setSize(600,400);// задаем размер
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//метод остановки программы по закрытию окна
         frame.setLocationRelativeTo(null); // расположение окна равняем по центру экрана
+        GUIForm form = new GUIForm(); //обьект класса  GUIform,
+        frame.add(form.getRootPanel());// вызываем фрейм
         frame.setVisible(true);// делаем видимым
 
 
